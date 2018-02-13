@@ -478,7 +478,7 @@ public class GameManager : MonoBehaviour {
 		yield return new WaitForSeconds (0.3f);
 		que.Enqueue(i*tableSize+j);
 		visit [i, j] = true;
-		print (tableSize);
+//		print (tableSize);
 		while (que.Count != 0) {
 			temp=que.Dequeue ();
 			i = temp / tableSize;

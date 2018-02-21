@@ -42,7 +42,7 @@ public class GoogleLoginScript : MonoBehaviour
 #endif 
 
 #if UNITY_ANDROID
-		CallJavaFunc("signIn");
+		CallJavaFunc("GoogleLogin",curActivity);
 #endif
 	}
 #if UNITY_IOS
@@ -55,13 +55,16 @@ public class GoogleLoginScript : MonoBehaviour
 
 		Debug.Log("UnityLog2");
 	}
+	//
 #endif 
 #if UNITY_ANDROID
-	public void CallJavaFunc( string strFuncName )
+	public void CallJavaFunc( string strFuncName ,AndroidJavaObject curr)
 	{
 		if( curActivity == null )
 			return;
-		curActivity.Call( strFuncName);
+		AndroidJavaClass jc = new AndroidJavaClass("aceproject.com.googlesignin.GoogleSigninActivity");
+		if(jc!=null)
+			jc.CallStatic( strFuncName,curr);
 	}
 
 #endif

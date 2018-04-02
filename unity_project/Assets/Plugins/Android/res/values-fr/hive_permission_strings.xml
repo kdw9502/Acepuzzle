@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hive_permission_ui_title">Notice concernant l\'autorisation d\'accès à l\'utilisation des services de jeu</string>
+    <string name="hive_permission_ui_ok">OK</string>
+    
+    <!-- PermissionGroup 'PHONE' -->
+    <string name="hive_permission_phone_title">TELEPHONE</string>
+    <string name="hive_permission_phone_desc">(Optionnel) Autorisation pour évènements et récompenses, pas d\'influence sur les fonctions d\'appel.</string>
+    
+    <!-- PermissionGroup 'CONTACTS' -->
+    <string name="hive_permission_contacts_title">REPERTOIRE</string>
+    <string name="hive_permission_contacts_desc">(Optionnel) Autorisation requise pour la synchronisation de ta liste d\'amis à Hive.</string>
+    
+    <!-- PermissionGroup 'STORAGE' -->
+    <string name="hive_permission_storage_title">ESPACE DE SAUVEGARDE</string>
+    <string name="hive_permission_storage_desc">(Optionnel) Autorisation pour la sauvegarde des données. Pas d\'accès aux données personnelles (photos, etc.).</string>
+    
+    <!-- PermissionGroup 'LOCATION' -->
+    <string name="hive_permission_location_title">LOCALISATION</string>
+    <string name="hive_permission_location_desc">Autorisation pour permettre de déterminer la localisation de cet appareil.</string>
+    
+    <!-- PermissionGroup 'MICROPHONE' -->
+    <string name="hive_permission_microphone_title">MICRO</string>
+    <string name="hive_permission_microphone_desc">Autorisation pour permettre l\'utilisation des fonctions vocales.</string>
+    
+    <!-- PermissionGroup 'CAMERA' -->
+    <string name="hive_permission_camera_title">APPAREIL PHOTO</string>
+    <string name="hive_permission_camera_desc">Autorisation pour permettre la prise de photo et l\'enregistrement de vidéos.</string>
+    
+    <!-- PermissionGroup 'SMS' -->
+    <string name="hive_permission_sms_title">SMS</string>
+    <string name="hive_permission_sms_desc"></string>
+    
+    <!-- PermissionGroup 'CALENDAR' -->
+    <string name="hive_permission_calendar_title">CALENDAR</string>
+    <string name="hive_permission_calendar_desc"></string>
+    
+    <!-- PermissionGroup 'SENSORS' -->
+    <string name="hive_permission_sensors_title">SENSORS</string>
+    <string name="hive_permission_sensors_desc"></string>
+</resources>

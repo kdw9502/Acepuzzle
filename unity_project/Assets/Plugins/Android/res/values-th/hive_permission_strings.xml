@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hive_permission_ui_title">แจ้งเตือนการขอรับคำอนุมัติเพื่อเล่นเกม</string>
+    <string name="hive_permission_ui_ok">OK</string>
+    
+    <!-- PermissionGroup 'PHONE' -->
+    <string name="hive_permission_phone_title">โทรศัพท์</string>
+    <string name="hive_permission_phone_desc">(ไม่บังคับ) ต้องได้รับอนุมัติเพื่อทำกิจกรรมในเกมและรับรางวัล โดยจะไม่มีผลต่อการโทรของโทรศัพท์์</string>
+    
+    <!-- PermissionGroup 'CONTACTS' -->
+    <string name="hive_permission_contacts_title">รายชื่อ</string>
+    <string name="hive_permission_contacts_desc">(ไม่บังคับ) จำเป็นต้องได้รับคำอนุญาตในการเชื่อมต่อรายชื่อเพื่อนของคุณเข้ากับ HIVE</string>
+    
+    <!-- PermissionGroup 'STORAGE' -->
+    <string name="hive_permission_storage_title">การเข้าถึงข้อมูล</string>
+    <string name="hive_permission_storage_desc">(ไม่บังคับ) ต้องได้รับอนุมัติเพื่อเก็บข้อมูลเกม โดยจะไม่มีการเข้าถึงไฟล์ส่วนตัว เช่น รูปถ่าย เป็นต้น</string>
+    
+    <!-- PermissionGroup 'LOCATION' -->
+    <string name="hive_permission_location_title">ตำแหน่ง</string>
+    <string name="hive_permission_location_desc">ต้องได้รับอนุมัติเพื่อเข้าถึงข้อมูลตำแหน่งของอุปกรณ์ในปัจจุบัน</string>
+    
+    <!-- PermissionGroup 'MICROPHONE' -->
+    <string name="hive_permission_microphone_title">เสียง</string>
+    <string name="hive_permission_microphone_desc">ต้องได้รับอนุมัติเพื่อใช้ระบบเสียง</string>
+    
+    <!-- PermissionGroup 'CAMERA' -->
+    <string name="hive_permission_camera_title">กล้อง</string>
+    <string name="hive_permission_camera_desc">ต้องได้รับอนุมัติเพื่อบันทึกภาพถ่ายและวีดีโอ</string>
+    
+    <!-- PermissionGroup 'SMS' -->
+    <string name="hive_permission_sms_title">SMS</string>
+    <string name="hive_permission_sms_desc"></string>
+    
+    <!-- PermissionGroup 'CALENDAR' -->
+    <string name="hive_permission_calendar_title">CALENDAR</string>
+    <string name="hive_permission_calendar_desc"></string>
+    
+    <!-- PermissionGroup 'SENSORS' -->
+    <string name="hive_permission_sensors_title">SENSORS</string>
+    <string name="hive_permission_sensors_desc"></string>
+</resources>

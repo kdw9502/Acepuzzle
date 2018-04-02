@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hive_permission_ui_title">إشعار طلب الولوج لخدمات اللعبة</string>
+    <string name="hive_permission_ui_ok">موافق</string>
+    
+    <!-- PermissionGroup 'PHONE' -->
+    <string name="hive_permission_phone_title">الهاتف</string>
+    <string name="hive_permission_phone_desc">(اختياري) الولوج مطلوب للمضي قدما في أحداث اللعبة والمكافآت ولن يؤثر على المكالمات.</string>
+    
+    <!-- PermissionGroup 'CONTACTS' -->
+    <string name="hive_permission_contacts_title">جهات الاتصال</string>
+    <string name="hive_permission_contacts_desc">(اختياري) مطلوب الإذن لمزامنة قائمة الأصدقاء الخاصة بك مع HIVE.</string>
+    
+    <!-- PermissionGroup 'STORAGE' -->
+    <string name="hive_permission_storage_title">تخزين</string>
+    <string name="hive_permission_storage_desc">(اختياري) الولوج مطلوب لتخزين بيانات اللعبة ولن يتم الوصول إلى الملفات الشخصية مثل الصور.</string>
+    
+    <!-- PermissionGroup 'LOCATION' -->
+    <string name="hive_permission_location_title">الموقع</string>
+    <string name="hive_permission_location_desc">الولوج مطلوب للوصول إلى موقع الجهاز الحالي.</string>
+    
+    <!-- PermissionGroup 'MICROPHONE' -->
+    <string name="hive_permission_microphone_title">ميكروفون</string>
+    <string name="hive_permission_microphone_desc">الولوج مطلوب لاستخدام ميزة الصوت.</string>
+    
+    <!-- PermissionGroup 'CAMERA' -->
+    <string name="hive_permission_camera_title">كاميرا</string>
+    <string name="hive_permission_camera_desc">الولوج مطلوب لالتقاط الصور وتسجيل الفيديو.</string>
+    
+    <!-- PermissionGroup 'SMS' -->
+    <string name="hive_permission_sms_title">SMS</string>
+    <string name="hive_permission_sms_desc"></string>
+    
+    <!-- PermissionGroup 'CALENDAR' -->
+    <string name="hive_permission_calendar_title">CALENDAR</string>
+    <string name="hive_permission_calendar_desc"></string>
+    
+    <!-- PermissionGroup 'SENSORS' -->
+    <string name="hive_permission_sensors_title">SENSORS</string>
+    <string name="hive_permission_sensors_desc"></string>
+</resources>

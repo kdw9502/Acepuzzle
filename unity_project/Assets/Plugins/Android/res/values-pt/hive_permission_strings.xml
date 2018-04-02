@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hive_permission_ui_title">Aviso de autoridade de acesso para o jogo</string>
+    <string name="hive_permission_ui_ok">OK</string>
+    
+    <!-- PermissionGroup 'PHONE' -->
+    <string name="hive_permission_phone_title">APARELHO</string>
+    <string name="hive_permission_phone_desc">(Opcional) A autoridade é requerida para proceder com os eventos do jogo e recompensas. As chamadas não serão afetadas.</string>
+    
+    <!-- PermissionGroup 'CONTACTS' -->
+    <string name="hive_permission_contacts_title">CONTATOS</string>
+    <string name="hive_permission_contacts_desc">(Opcional) A autoridade é necessária para sincronizar a sua lista de amigos com a HIVE.</string>
+    
+    <!-- PermissionGroup 'STORAGE' -->
+    <string name="hive_permission_storage_title">MEMÓRIA</string>
+    <string name="hive_permission_storage_desc">(Opcional) A autoridade é requerida para armazenar dados do jogo. Arquivos privados, como fotos, não serão acessados.</string>
+    
+    <!-- PermissionGroup 'LOCATION' -->
+    <string name="hive_permission_location_title">LOCALIZAÇÃO</string>
+    <string name="hive_permission_location_desc">A autoridade é requerida para acessar a localização do aparelho atual.</string>
+    
+    <!-- PermissionGroup 'MICROPHONE' -->
+    <string name="hive_permission_microphone_title">AUDIO</string>
+    <string name="hive_permission_microphone_desc">A autoridade é requerida para usar a função de voz.</string>
+    
+    <!-- PermissionGroup 'CAMERA' -->
+    <string name="hive_permission_camera_title">CAMERA</string>
+    <string name="hive_permission_camera_desc">A autoridade é requerida para tirar fotos e gravar vídeos.</string>
+    
+    <!-- PermissionGroup 'SMS' -->
+    <string name="hive_permission_sms_title">SMS</string>
+    <string name="hive_permission_sms_desc"></string>
+    
+    <!-- PermissionGroup 'CALENDAR' -->
+    <string name="hive_permission_calendar_title">CALENDAR</string>
+    <string name="hive_permission_calendar_desc"></string>
+    
+    <!-- PermissionGroup 'SENSORS' -->
+    <string name="hive_permission_sensors_title">SENSORS</string>
+    <string name="hive_permission_sensors_desc"></string>
+</resources>

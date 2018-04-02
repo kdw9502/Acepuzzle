@@ -1,0 +1,376 @@
+﻿﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" />
+<title> Com2uS </title>
+<style type="text/css">
+@charset "utf-8";
+
+/* Com2us PDEV_PD. Author : Choi Hyunsun 2014-03-11. Edit : Choi Hyunsun 2014-04-09 */
+
+html	{-webkit-text-size-adjust:none;}
+body		{margin:0;padding:0;font-family:sans-serif;background-color:#e8e8e8;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section	{display:block;}
+img	{vertical-align:top;border:0;}
+a	{text-decoration:none;}
+*:lang(ja){font-family:'lucida grande',tahoma,verdana,arial,'hiragino kaku gothic pro',meiryo,'ms pgothic',sans-serif;}
+input:lang(ja){font-family:'lucida grande',tahoma,verdana,arial,'hiragino kaku gothic pro',meiryo,'ms pgothic',sans-serif;}
+select:lang(ja){font-family:'lucida grande',tahoma,verdana,arial,'hiragino kaku gothic pro',meiryo,'ms pgothic',sans-serif;}
+*:lang(zh){font-family:Times New Roman;}
+input:lang(zh){font-family:Times New Roman;}
+select:lang(zh){font-family:Times New Roman;}
+
+/* agreement */
+html, body	{height:100%;}
+.contents * {margin:0;padding:0;list-style:none;}
+.contents h1	{margin-bottom:18px;font-size:12px;color:#000;font-weight:normal;}
+.contents h2	{font-size:11px;color:#000;font-weight:normal;}
+.contents h3, .contents strong, .contents .point	{color:#000;font-weight:normal;}
+.contents a	{color:#1b62ab;text-decoration:underline;}
+.contents .index	{padding:15px;margin-bottom:18px;border-top:1px solid #d9d9d9;border-bottom:1px solid #d9d9d9;}
+.contents .index a	{text-decoration:none;color:#666;}
+.contents p, .contents dl, .contents ol, .contents ul	{margin-bottom:18px;}
+.contents ol ol, .contents ul ul, .contents li p	{margin-bottom:0;}
+
+@media all and (orientation:portrait)	{
+#C2Sagree	{height:100%;padding:0;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;vertical-align:top;}
+#C2Sagree .section	{height:46.3%;position:relative;padding:37px 10px 50px;border-top:1px solid #c1c1c1;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,1);box-shadow:inset 0 1px 0 rgba(255,255,255,1);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;vertical-align:top;}
+#C2Sagree .section:first-child	{border:0;-webkit-box-shadow:none;box-shadow:none;}
+#C2Sagree .section > h1	{position:absolute;top:15px;left:15px;margin:0;padding:0;line-height:100%;font-size:12px;color:#444;}
+#C2Sagree .section .checkagree	{width:100%;position:absolute;bottom:11px;left:0;margin:0;padding:0 10px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+#C2Sagree .section .checkagree label	{width:100%;height:28px;display:block;position:relative;color:#447cc1;text-align:center;line-height:28px;font-size:12px;background-color:#fff;-webkit-border-radius:10px;border-radius:10px;-webkit-box-shadow:0 2px 0 rgba(0,0,0,0.16);box-shadow:0 2px 0 rgba(0,0,0,0.16);}
+#C2Sagree .section .checkagree label:first-child:nth-last-child(2)	{width:48.2%;float:left;}
+#C2Sagree .section .checkagree label:last-child:nth-child(2)	{width:48.2%;float:right;}
+#C2Sagree .section .checkagree input	{opacity:0;position:absolute;top:0;left:0;}
+#C2Sagree .section .checkagree label.on	{color:#fff;background-color:#447cc1;}
+#C2Sagree .section .checkagree label.on:before	{width:25px;height:24px;display:block;content:'';position:absolute;top:-5px;left:5px;background:url('checked.png') no-repeat 0 0;background-size:25px 24px;}
+#C2Sagree .section article	{height:100%;display:block;padding:6px;color:#666;line-height:160%;font-size:10px;background-color:#d8d8d8;-webkit-border-radius:10px;border-radius:10px;-webkit-box-shadow:inset 1px 1px 4px rgba(0,0,0,0.28), 0 1px 0 rgba(255,255,255,0.42);box-shadow:inset 1px 1px 4px rgba(0,0,0,0.28), 0 1px 0 rgba(255,255,255,0.42);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+#C2Sagree .section article .wrap	{height:100%;overflow:auto;-webkit-overflow-scrolling:touch;}
+
+#C2Sagree.only	{padding:15px 0;}
+#C2Sagree.only .section	{height:50%;}
+}
+
+@media all and (orientation:landscape)	{
+#C2Sagree	{height:100%;padding:0;margin:0;white-space:nowrap;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;vertical-align:top;}
+#C2Sagree .section	{width:45.7%;height:100%;position:relative;display:inline-block;padding:37px 10px 54px 10px;margin-left:-4px;border-left:1px solid #c1c1c1;-webkit-box-shadow:inset 1px 0 0 rgba(255,255,255,1);box-shadow:inset 1px 0 0 rgba(255,255,255,1);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;vertical-align:top;}
+#C2Sagree .section:first-child	{margin:0;border:0;-webkit-box-shadow:none;box-shadow:none;}
+#C2Sagree .section > h1	{position:absolute;top:15px;left:15px;margin:0;padding:0;line-height:100%;font-size:12px;color:#444;}
+#C2Sagree .section .checkagree	{width:100%;position:absolute;bottom:15px;left:0;margin:0;padding:0 10px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+#C2Sagree .section .checkagree label	{width:100%;height:28px;display:block;position:relative;color:#447cc1;text-align:center;line-height:28px;font-size:12px;background-color:#fff;-webkit-border-radius:10px;border-radius:10px;-webkit-box-shadow:0 2px 0 rgba(0,0,0,0.16);box-shadow:0 2px 0 rgba(0,0,0,0.16);}
+#C2Sagree .section .checkagree label:first-child:nth-last-child(2)	{width:48.2%;float:left;}
+#C2Sagree .section .checkagree label:last-child:nth-child(2)	{width:48.2%;float:right;}
+#C2Sagree .section .checkagree input	{opacity:0;position:absolute;top:0;left:0;}
+#C2Sagree .section .checkagree label.on	{color:#fff;background-color:#447cc1;}
+#C2Sagree .section .checkagree label.on:before	{width:25px;height:24px;display:block;content:'';position:absolute;top:-5px;left:5px;background:url('checked.png') no-repeat 0 0;background-size:25px 24px;}
+#C2Sagree .section article	{height:100%;display:block;padding:6px;color:#666;line-height:160%;font-size:10px;white-space:normal;background-color:#d8d8d8;-webkit-border-radius:10px;border-radius:10px;-webkit-box-shadow:inset 1px 1px 4px rgba(0,0,0,0.28), 0 1px 0 rgba(255,255,255,0.42);box-shadow:inset 1px 1px 4px rgba(0,0,0,0.28), 0 1px 0 rgba(255,255,255,0.42);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+#C2Sagree .section article .wrap	{height:100%;overflow:auto;-webkit-overflow-scrolling:touch;}
+
+#C2Sagree.only	{padding:0 20px;}
+#C2Sagree.only .section	{width:100%;}
+}
+</style>
+
+<script type="text/javascript">
+
+/* This function makes a div scrollable with android and iphone */ 
+function isTouchDevice(){ 
+	var userAgent = navigator.userAgent.toLowerCase();
+
+	//return false;
+	
+	/* Added Android 3.0 honeycomb detection because touchscroll.js breaks the built in div scrolling of android 3.0 mobile safari browser */ 
+	if((!userAgent.match(/android 2/i)) || (userAgent.match(/honeycomb/i))) return false; 
+	try{ document.createEvent("TouchEvent"); return true; }catch(e){ return false; } } 
+function touchScroll(id){ if(isTouchDevice()){ //if touch events exist... 
+	var el=document.getElementById(id); var scrollStartPosY=0; var scrollStartPosX=0; 
+	document.getElementById(id).addEventListener("touchstart", 
+			function(event) { scrollStartPosY=this.scrollTop+event.touches[0].pageY; scrollStartPosX=this.scrollLeft+event.touches[0].pageX; //event.preventDefault(); // Keep this remarked so you can click on buttons and links in the div 
+			},false); 
+	document.getElementById(id).addEventListener("touchmove", function(event) { 
+		// These if statements allow the full page to scroll (not just the div) if they are 
+		// at the top of the div scroll or the bottom of the div scroll 
+		// The -5 and +5 below are in case they are trying to scroll the page sideways 
+		// but their finger moves a few pixels down or up. The event.preventDefault() function 
+		// will not be called in that case so that the whole page can scroll. 
+		if ((this.scrollTop < this.scrollHeight-this.offsetHeight && this.scrollTop+event.touches[0].pageY < scrollStartPosY-5) || (this.scrollTop != 0 && this.scrollTop+event.touches[0].pageY > scrollStartPosY+5)) event.preventDefault();	
+		if ((this.scrollLeft < this.scrollWidth-this.offsetWidth && this.scrollLeft+event.touches[0].pageX < scrollStartPosX-5) || (this.scrollLeft != 0 && this.scrollLeft+event.touches[0].pageX > scrollStartPosX+5)) event.preventDefault(); 
+		this.scrollTop=scrollStartPosY-event.touches[0].pageY; 
+		this.scrollLeft=scrollStartPosX-event.touches[0].pageX; },false); } } 
+</script>
+
+
+</head>
+
+<body onload="resizeHeight();">
+
+
+<section id="C2Sagree"  class="only">	<section class="section" id="section1" style="color: #FF2A2A;font-weight: bold;">		<span style="font-size:25px;">이것은 샘플입니다.</span><br/>		<br/>			au_terms_meta.json 과 이하 html 파일들은 게임마다 각기 다를 수 있습니다.<br/>			적용하려는 게임에 맞는 au_terms_meta.json 파일을 확인하고, 이하 html 파일들이 모두 존재하는지 확인합니다.<br/>			모든 파일들은 게임에 따라 달라질 수 있으니 꼭 확인해 주세요.			<br/>			<br/>			<a href="http://gms.com2us.com/terms/main/terms_download/dev#none">http://gms.com2us.com/terms/main/terms_download/dev#none</a>					<div class="checkagree">			<label for="agree1" onclick="chkagree(this, 'T1', true, '', '1');" ><input type="checkbox" id="agree1" name="check1" />동의합니다</label>		</div>	</section></section>
+
+<script type="text/javascript">
+
+function resizeHeight()
+{
+	//document.getElementById('C2Sagree').style.height= window.innerHeight + "px";
+}
+		
+touchScroll('article1');touchScroll('article2');//jquery 사용불가
+var TermsObj = {
+	version : "4",
+	group_code : "M8",
+	item : {
+		T1: false ,T2: false ,	}		
+};
+
+Object.size = function(obj) {
+    var size = 0, key;
+    for (key in obj) {
+        if (obj.hasOwnProperty(key)) size++;
+    }
+    return size;
+};
+
+function chkagree(obj, main_code, agree, off_id, s_id)
+{
+	if(obj.className.indexOf('on') == -1)
+	{
+		obj.className = "on";
+		document.getElementById("section"+s_id).className = "section agree";
+	
+		TermsObj.item[main_code] = agree;
+
+		if(off_id != "")
+		{
+			document.getElementById(off_id).className = "";
+		}
+
+		var section_id = "done";
+		
+		var elems = document.getElementsByTagName('section'), i;
+	    for (i in elems) {
+	        if((' ' + elems[i].className + ' ').indexOf(' ' + 'agree' + ' ') ==  -1 && (' ' + elems[i].className + ' ').indexOf(' ' + 'section' + ' ') >  -1) {
+	        	section_id = elems[i].id;
+	        }
+	    }
+
+	    console.log("section_id :"+section_id);
+
+	    if(section_id != "done")
+	    {
+		    scrollTo(document.body, document.getElementById(section_id).offsetLeft, document.getElementById(section_id).offsetTop, 150); 
+	    }
+	    else
+	    {
+	    	var encode_str = Base64.URLEncode(Base64.encode(JSON.stringify(TermsObj)));
+			console.log(encode_str);
+
+			window.location.href = "c2s://activeuser?agreement="+encode_str;
+	    }
+
+
+		
+	}
+}
+
+function scrollTo(element, left, top, duration) {
+	
+    if (duration <= 0) return;
+
+    var difference = 0;
+    var isvertical = false;
+
+	if(top - element.scrollTop == 0)
+    {
+    	difference = left - element.scrollLeft;
+    }
+    else
+    {
+    	isvertical = true;
+    	difference = top - element.scrollTop;
+    }
+    var perTick = difference / duration * 10;
+
+    setTimeout(function() {
+
+    	if(isvertical) //세로일 경우
+    	{
+    		element.scrollTop = element.scrollTop + perTick;
+    		// if (element.scrollTop >= top) return;
+    	}
+    	else //가로인 경우
+    	{
+    		element.scrollLeft = element.scrollLeft + perTick;
+   		    //if (element.scrollLeft >= left) return;
+    	}
+
+        scrollTo(element, left, top, duration - 10);
+    }, 10);
+};
+
+function getOnClassCnt()
+{
+	var cnt = 0;
+
+    var elems = document.getElementsByTagName('label'), i;
+    for (i in elems) {
+        if((' ' + elems[i].className + ' ').indexOf(' ' + 'on' + ' ') > -1) {   
+        	cnt++;
+        }
+    }
+    
+    return cnt;
+}
+
+
+
+
+//Base64
+var Base64 = {
+
+		// private property
+_keyStr : "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=",
+
+	  // public method for encoding
+	  encode : function (input) {
+		  var output = "";
+		  var chr1, chr2, chr3, enc1, enc2, enc3, enc4;
+		  var i = 0;
+
+		  input = Base64._utf8_encode(input);
+
+		  while (i < input.length) {
+
+			  chr1 = input.charCodeAt(i++);
+			  chr2 = input.charCodeAt(i++);
+			  chr3 = input.charCodeAt(i++);
+
+			  enc1 = chr1 >> 2;
+			  enc2 = ((chr1 & 3) << 4) | (chr2 >> 4);
+			  enc3 = ((chr2 & 15) << 2) | (chr3 >> 6);
+			  enc4 = chr3 & 63;
+
+			  if (isNaN(chr2)) {
+				  enc3 = enc4 = 64;
+			  } else if (isNaN(chr3)) {
+				  enc4 = 64;
+			  }
+
+			  output = output +
+				  this._keyStr.charAt(enc1) + this._keyStr.charAt(enc2) +
+				  this._keyStr.charAt(enc3) + this._keyStr.charAt(enc4);
+
+		  }
+
+		  return output;
+	  },
+
+	  // public method for decoding
+	decode : function (input) {
+		 var output = "";
+		 var chr1, chr2, chr3;
+		 var enc1, enc2, enc3, enc4;
+		 var i = 0;
+
+		 input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
+
+		 while (i < input.length) {
+
+			 enc1 = this._keyStr.indexOf(input.charAt(i++));
+			 enc2 = this._keyStr.indexOf(input.charAt(i++));
+			 enc3 = this._keyStr.indexOf(input.charAt(i++));
+			 enc4 = this._keyStr.indexOf(input.charAt(i++));
+
+			 chr1 = (enc1 << 2) | (enc2 >> 4);
+			 chr2 = ((enc2 & 15) << 4) | (enc3 >> 2);
+			 chr3 = ((enc3 & 3) << 6) | enc4;
+
+			 output = output + String.fromCharCode(chr1);
+
+			 if (enc3 != 64) {
+				 output = output + String.fromCharCode(chr2);
+			 }
+			 if (enc4 != 64) {
+				 output = output + String.fromCharCode(chr3);
+			 }
+
+		 }
+
+		 output = Base64._utf8_decode(output);
+
+		 return output;
+
+	 },
+
+	 // private method for UTF-8 encoding
+	_utf8_encode : function (string) {
+			   string = string.replace(/\r\n/g,"\n");
+			   var utftext = "";
+
+			   for (var n = 0; n < string.length; n++) {
+
+				   var c = string.charCodeAt(n);
+
+				   if (c < 128) {
+					   utftext += String.fromCharCode(c);
+				   }
+				   else if((c > 127) && (c < 2048)) {
+					   utftext += String.fromCharCode((c >> 6) | 192);
+					   utftext += String.fromCharCode((c & 63) | 128);
+				   }
+				   else {
+					   utftext += String.fromCharCode((c >> 12) | 224);
+					   utftext += String.fromCharCode(((c >> 6) & 63) | 128);
+					   utftext += String.fromCharCode((c & 63) | 128);
+				   }
+
+			   }
+
+			   return utftext;
+		   },
+
+		   // private method for UTF-8 decoding
+	_utf8_decode : function (utftext) {
+			   var string = "";
+			   var i = 0;
+			   var c = c1 = c2 = 0;
+
+			   while ( i < utftext.length ) {
+
+				   c = utftext.charCodeAt(i);
+
+				   if (c < 128) {
+					   string += String.fromCharCode(c);
+					   i++;
+				   }
+				   else if((c > 191) && (c < 224)) {
+					   c2 = utftext.charCodeAt(i+1);
+					   string += String.fromCharCode(((c & 31) << 6) | (c2 & 63));
+					   i += 2;
+				   }
+				   else {
+					   c2 = utftext.charCodeAt(i+1);
+					   c3 = utftext.charCodeAt(i+2);
+					   string += String.fromCharCode(((c & 15) << 12) | ((c2 & 63) << 6) | (c3 & 63));
+					   i += 3;
+				   }
+
+			   }
+
+			   return string;
+		   },
+
+	URLEncode : function (string) {
+			return escape(this._utf8_encode(string));
+		},
+
+		// public method for url decoding
+	URLDecode : function (string) {
+			return this._utf8_decode(unescape(string));
+		}
+};
+
+</script>
+
+</body>
+</html>

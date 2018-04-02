@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hive_permission_ui_title">Уведомление: доступ к данным для стабилизации геймплея</string>
+    <string name="hive_permission_ui_ok">OK</string>
+    
+    <!-- PermissionGroup 'PHONE' -->
+    <string name="hive_permission_phone_title">ТЕЛЕФОН</string>
+    <string name="hive_permission_phone_desc">(По выбору) Доступ, необходимый для проведения акций и начисления наград. Не имеет доступа к звонкам.</string>
+    
+    <!-- PermissionGroup 'CONTACTS' -->
+    <string name="hive_permission_contacts_title">КОНТАКТЫ</string>
+    <string name="hive_permission_contacts_desc">(По выбору) Доступ к синхронизации HIVE со списком ваших друзей.</string>
+    
+    <!-- PermissionGroup 'STORAGE' -->
+    <string name="hive_permission_storage_title">ПАМЯТЬ</string>
+    <string name="hive_permission_storage_desc">(По выбору) Доступ, необходимый для сохранения игровых данных. Не имеет доступа к фотографиям и другим личным данным.</string>
+    
+    <!-- PermissionGroup 'LOCATION' -->
+    <string name="hive_permission_location_title">МЕСТОПОЛОЖЕНИЕ</string>
+    <string name="hive_permission_location_desc">Возможность использовать геоданные этого устройства.</string>
+    
+    <!-- PermissionGroup 'MICROPHONE' -->
+    <string name="hive_permission_microphone_title">ЗВУК</string>
+    <string name="hive_permission_microphone_desc">Возможность использовать звуковые функции.</string>
+    
+    <!-- PermissionGroup 'CAMERA' -->
+    <string name="hive_permission_camera_title">КАМЕРА</string>
+    <string name="hive_permission_camera_desc">Возможность делать фото и снимать видео.</string>
+    
+    <!-- PermissionGroup 'SMS' -->
+    <string name="hive_permission_sms_title">SMS</string>
+    <string name="hive_permission_sms_desc"></string>
+    
+    <!-- PermissionGroup 'CALENDAR' -->
+    <string name="hive_permission_calendar_title">CALENDAR</string>
+    <string name="hive_permission_calendar_desc"></string>
+    
+    <!-- PermissionGroup 'SENSORS' -->
+    <string name="hive_permission_sensors_title">SENSORS</string>
+    <string name="hive_permission_sensors_desc"></string>
+</resources>

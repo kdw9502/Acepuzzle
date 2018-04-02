@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hive_permission_ui_title">Hướng dẫn quyền truy cập để sử dụng game</string>
+    <string name="hive_permission_ui_ok">OK</string>
+    
+    <!-- PermissionGroup 'PHONE' -->
+    <string name="hive_permission_phone_title">Gọi Điện</string>
+    <string name="hive_permission_phone_desc">(Tùy chọn) Quyền hạn cần thiết để tiến hành các event trong game và gửi phần thưởng, không gây ảnh hưởng đến chức năng gọi điện thoại.</string>
+    
+    <!-- PermissionGroup 'CONTACTS' -->
+    <string name="hive_permission_contacts_title">Danh Bạ</string>
+    <string name="hive_permission_contacts_desc">(Tùy chọn) Quyền hạn cần thiết để đồng bộ danh sách bạn bè với HIVE.</string>
+    
+    <!-- PermissionGroup 'STORAGE' -->
+    <string name="hive_permission_storage_title">Dữ Liệu</string>
+    <string name="hive_permission_storage_desc">(Tùy chọn) Quyền hạn cần thiết để lưu dữ liệu game, không truy cập các tập tin cá nhân như hình ảnh vv...</string>
+    
+    <!-- PermissionGroup 'LOCATION' -->
+    <string name="hive_permission_location_title">Vị Trí</string>
+    <string name="hive_permission_location_desc">Quyền hạn cần thiết để truy cập vị trí của thiết bị hiện tại.</string>
+    
+    <!-- PermissionGroup 'MICROPHONE' -->
+    <string name="hive_permission_microphone_title">Ghi Âm</string>
+    <string name="hive_permission_microphone_desc">Quyền hạn cần thiết để sử dụng chức năng âm thanh.</string>
+    
+    <!-- PermissionGroup 'CAMERA' -->
+    <string name="hive_permission_camera_title">Máy Ảnh</string>
+    <string name="hive_permission_camera_desc">Quyền hạn cần thiết để chụp ảnh và quay video.</string>
+    
+    <!-- PermissionGroup 'SMS' -->
+    <string name="hive_permission_sms_title">SMS</string>
+    <string name="hive_permission_sms_desc"></string>
+    
+    <!-- PermissionGroup 'CALENDAR' -->
+    <string name="hive_permission_calendar_title">CALENDAR</string>
+    <string name="hive_permission_calendar_desc"></string>
+    
+    <!-- PermissionGroup 'SENSORS' -->
+    <string name="hive_permission_sensors_title">SENSORS</string>
+    <string name="hive_permission_sensors_desc"></string>
+</resources>

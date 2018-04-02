@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hive_permission_ui_title">遊戲存取權限說明</string>
+    <string name="hive_permission_ui_ok">確認</string>
+    
+    <!-- PermissionGroup 'PHONE' -->
+    <string name="hive_permission_phone_title">存取手機資訊</string>
+    <string name="hive_permission_phone_desc">(選填) 遊戲內活動進行及獎勵發送相關權限，不會影響電話功能。</string>
+    
+    <!-- PermissionGroup 'CONTACTS' -->
+    <string name="hive_permission_contacts_title">存取通訊錄</string>
+    <string name="hive_permission_contacts_desc">(選填) 為同步通訊錄至HIVE所需的選限。</string>
+    
+    <!-- PermissionGroup 'STORAGE' -->
+    <string name="hive_permission_storage_title">儲存空間</string>
+    <string name="hive_permission_storage_desc">(選填) 儲存遊戲數據相關權限，將不會存取照片等個人檔案。</string>
+    
+    <!-- PermissionGroup 'LOCATION' -->
+    <string name="hive_permission_location_title">使用位置</string>
+    <string name="hive_permission_location_desc">讀取該設備所在位置的權限。</string>
+    
+    <!-- PermissionGroup 'MICROPHONE' -->
+    <string name="hive_permission_microphone_title">使用麥克風</string>
+    <string name="hive_permission_microphone_desc">使用語音功能的權限。</string>
+    
+    <!-- PermissionGroup 'CAMERA' -->
+    <string name="hive_permission_camera_title">使用相機</string>
+    <string name="hive_permission_camera_desc">拍攝照片及錄製影片的權限。</string>
+    
+    <!-- PermissionGroup 'SMS' -->
+    <string name="hive_permission_sms_title">SMS</string>
+    <string name="hive_permission_sms_desc"></string>
+    
+    <!-- PermissionGroup 'CALENDAR' -->
+    <string name="hive_permission_calendar_title">CALENDAR</string>
+    <string name="hive_permission_calendar_desc"></string>
+    
+    <!-- PermissionGroup 'SENSORS' -->
+    <string name="hive_permission_sensors_title">SENSORS</string>
+    <string name="hive_permission_sensors_desc"></string>
+</resources>

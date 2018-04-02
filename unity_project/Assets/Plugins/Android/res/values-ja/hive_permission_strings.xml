@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hive_permission_ui_title">円滑なゲームサービス利用のためのアクセス権限のお知らせ</string>
+    <string name="hive_permission_ui_ok">OK</string>
+    
+    <!-- PermissionGroup 'PHONE' -->
+    <string name="hive_permission_phone_title">端末の情報</string>
+    <string name="hive_permission_phone_desc">(選択) ゲーム内のイベント進行および報酬のために必要な権限で電話機能には影響を与えません。</string>
+    
+    <!-- PermissionGroup 'CONTACTS' -->
+    <string name="hive_permission_contacts_title">連絡先</string>
+    <string name="hive_permission_contacts_desc">(選択) HIVEで連絡先のフレンドを同期化するために必要な権限です。</string>
+    
+    <!-- PermissionGroup 'STORAGE' -->
+    <string name="hive_permission_storage_title">ストレージ</string>
+    <string name="hive_permission_storage_desc">(選択) ゲームデータを保存するために必要な権限で写真などの個人ファイルにはアクセスしません。</string>
+    
+    <!-- PermissionGroup 'LOCATION' -->
+    <string name="hive_permission_location_title">位置情報使用</string>
+    <string name="hive_permission_location_desc">この端末の位置情報にアクセスするために必要な権限です。</string>
+    
+    <!-- PermissionGroup 'MICROPHONE' -->
+    <string name="hive_permission_microphone_title">マイク使用</string>
+    <string name="hive_permission_microphone_desc">音声機能を使用するために必要な権限です。</string>
+    
+    <!-- PermissionGroup 'CAMERA' -->
+    <string name="hive_permission_camera_title">カメラ使用</string>
+    <string name="hive_permission_camera_desc">写真撮影および動画録画のために必要な権限です。</string>
+    
+    <!-- PermissionGroup 'SMS' -->
+    <string name="hive_permission_sms_title">SMS</string>
+    <string name="hive_permission_sms_desc"></string>
+    
+    <!-- PermissionGroup 'CALENDAR' -->
+    <string name="hive_permission_calendar_title">CALENDAR</string>
+    <string name="hive_permission_calendar_desc"></string>
+    
+    <!-- PermissionGroup 'SENSORS' -->
+    <string name="hive_permission_sensors_title">SENSORS</string>
+    <string name="hive_permission_sensors_desc"></string>
+</resources>

@@ -123,7 +123,7 @@ public class Unity3dBuilder : EditorWindow{
 		adjustPluginImport ();
 
 		EditorUserBuildSettings.androidBuildSystem = AndroidBuildSystem.Internal; 
-		BuildOptions opt = BuildOptions.AcceptExternalModificationsToPlayer;
+		BuildOptions opt = BuildOptions.None; //BuildOptions.AcceptExternalModificationsToPlayer;
 
 		PlayerSettings.renderingPath = RenderingPath.VertexLit;    
 
@@ -144,7 +144,7 @@ public class Unity3dBuilder : EditorWindow{
 		PlayerSettings.SetUseDefaultGraphicsAPIs( BuildTarget.Android, false );
 		PlayerSettings.SetGraphicsAPIs( BuildTarget.Android, new [] { UnityEngine.Rendering.GraphicsDeviceType.OpenGLES2, UnityEngine.Rendering.GraphicsDeviceType.Metal } );
 
-		string BUILD_TARGET_PATH = TARGET_DIR + "/Android";
+		string BUILD_TARGET_PATH = TARGET_DIR + "/9inningsManager.apk";
 		Directory.CreateDirectory(BUILD_TARGET_PATH);
 
 		GenericBuild(SCENES, BUILD_TARGET_PATH, BuildTarget.Android , opt);

@@ -1032,7 +1032,7 @@
 					"$(SRCROOT)/Classes/Native",
 					"$(SRCROOT)/Libraries/bdwgc/include",
 					"$(SRCROOT)/Libraries/libil2cpp/include",
-					"$(SRCROOT)/iOS/include",
+					"$(SRCROOT)/../C2S/iOS/include",
 				);
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1041,7 +1041,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/Libraries\"",
-					"$(SRCROOT)/iOS/lib",
+					"$(SRCROOT)/../C2S/iOS/lib",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
@@ -1100,7 +1100,7 @@
 					"$(SRCROOT)/Classes/Native",
 					"$(SRCROOT)/Libraries/bdwgc/include",
 					"$(SRCROOT)/Libraries/libil2cpp/include",
-					"$(SRCROOT)/iOS/include",
+					"$(SRCROOT)/../C2S/iOS/include",
 				);
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1109,7 +1109,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/Libraries\"",
-					"$(SRCROOT)/iOS/lib",
+					"$(SRCROOT)/../C2S/iOS/lib",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
@@ -1294,7 +1294,7 @@
 					"$(SRCROOT)/Classes/Native",
 					"$(SRCROOT)/Libraries/bdwgc/include",
 					"$(SRCROOT)/Libraries/libil2cpp/include",
-					"$(SRCROOT)/iOS/include",
+					"$(SRCROOT)/../C2S/iOS/include",
 				);
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1303,7 +1303,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/Libraries\"",
-					"$(SRCROOT)/iOS/lib",
+					"$(SRCROOT)/../C2S/iOS/lib",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
@@ -1431,7 +1431,7 @@
 					"$(SRCROOT)/Classes/Native",
 					"$(SRCROOT)/Libraries/bdwgc/include",
 					"$(SRCROOT)/Libraries/libil2cpp/include",
-					"$(SRCROOT)/iOS/include",
+					"$(SRCROOT)/../C2S/iOS/include",
 				);
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1440,7 +1440,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/Libraries\"",
-					"$(SRCROOT)/iOS/lib",
+					"$(SRCROOT)/../C2S/iOS/lib",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (

@@ -272,3 +272,11 @@ static Class UnityRenderingView_LayerClassMTL(id self_, SEL _cmd)
 }
 
 @end
+#include "C2SActiveUser.h"
+
+extern "C" {
+    void CS_SetModuleView()
+    {
+        CS_UserAgreeSetView((__bridge void*)UnityGetGLView());
+    }
+};

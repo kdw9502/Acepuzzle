@@ -205,7 +205,7 @@ public class Unity3dBuilder : EditorWindow{
 		PlayerSettings.SetUseDefaultGraphicsAPIs( BuildTarget.iOS, false );
 		PlayerSettings.SetGraphicsAPIs( BuildTarget.iOS, new [] { UnityEngine.Rendering.GraphicsDeviceType.OpenGLES2, UnityEngine.Rendering.GraphicsDeviceType.Metal } );
 
-		string BUILD_TARGET_PATH = TARGET_DIR + "/iOS";
+		string BUILD_TARGET_PATH = TARGET_DIR + "/iOS_Simulator";
 		Directory.CreateDirectory(BUILD_TARGET_PATH);
 
 		//2018.03.19추가: AutoSigning 해제

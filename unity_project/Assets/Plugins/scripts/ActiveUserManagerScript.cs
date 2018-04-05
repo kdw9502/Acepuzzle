@@ -4,10 +4,10 @@ using System.Collections.Generic;
 
 public class ActiveUserManagerScript : MonoBehaviour {
 
-	private int startPosY = (int)(Screen.height*0.12);
-	private int offsetY = 10;
-	private int height = (int)(Screen.height*0.06);
-	private int width = (int)(Screen.width*0.8);
+//	private int startPosY = (int)(Screen.height*0.12);
+//	private int offsetY = 10;
+//	private int height = (int)(Screen.height*0.06);
+//	private int width = (int)(Screen.width*0.8);
 	private string message = "";
 
 	private C2SActiveUserPlugin activeUser = null;
@@ -27,7 +27,7 @@ public class ActiveUserManagerScript : MonoBehaviour {
 		//		activeUser.setNoticePopupCallback (gameObject.name, "NoticePopupCallback");
 		activeUser.setEnableUserAgreeUI(C2SActiveUserPlugin.USER_AGREE_COLOR_TYPE_BLACK);
 		activeUser.setEnableRequestStoragePermission();
-		yield return new WaitForSeconds (2.0f);
+		yield return new WaitForSeconds (1.0f);
 		activeUser.start ();
 
 	}
@@ -59,10 +59,10 @@ public class ActiveUserManagerScript : MonoBehaviour {
 		Debug.Log ("message length : " + tempMessage.Length);
 	}
 
-	int computePosY(int i)
-	{		
-		return startPosY + (height * i)+ offsetY;
-	}
+//	int computePosY(int i)
+//	{		
+//		return startPosY + (height * i)+ offsetY;
+//	}
 	public void startWithoutNotice(){
 		activeUser.startWithoutNotice (C2SActiveUserPluginInterface.STAGING_SERVER, true);
 	}

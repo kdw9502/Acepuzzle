@@ -12,7 +12,7 @@ public class DeviceSetting : MonoBehaviour {
 			offerwallLabel.SetActive (false);
 		#endif
 		#if IOS_SIMULATOR
-		evnentLabel.SetActive(false);
+		eventLabel.SetActive(false);
 		noticeLabel.SetActive(false);
 		#endif
 		#if UNITY_ANDROID

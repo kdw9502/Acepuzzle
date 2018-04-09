@@ -93,7 +93,7 @@ public class GameManager : MonoBehaviour {
 		case GameState.stop:
 			// Escape to Quit when game is not played
 			if (Input.GetKeyDown (KeyCode.Escape)) {
-				Application.Quit ();
+				MercuryManagerScript.ShowMoreGames();
 			}
 			break;
 		}

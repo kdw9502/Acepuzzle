@@ -77,7 +77,6 @@ public class Unity3dBuilder : EditorWindow{
 			//builder.Close ();
 		}
 	}
-	[MenuItem("Build/adjust")]
 	static void adjustPluginImport(){
 
 		List<PluginImporter> simulatorList,deviceList;
@@ -171,7 +170,8 @@ public class Unity3dBuilder : EditorWindow{
 
 		//2018.02.05추가 : Unity5.6으로 업데이트 하면서 발생한 이슈
 		PlayerSettings.SetUseDefaultGraphicsAPIs( BuildTarget.iOS, false );
-		PlayerSettings.SetGraphicsAPIs( BuildTarget.iOS, new [] { UnityEngine.Rendering.GraphicsDeviceType.OpenGLES2, UnityEngine.Rendering.GraphicsDeviceType.Metal } );
+
+		PlayerSettings.SetGraphicsAPIs( BuildTarget.iOS, new [] { UnityEngine.Rendering.GraphicsDeviceType.OpenGLES3,UnityEngine.Rendering.GraphicsDeviceType.OpenGLES2, UnityEngine.Rendering.GraphicsDeviceType.Metal } );
 
 		string BUILD_TARGET_PATH = TARGET_DIR + "/iOS";
 		Directory.CreateDirectory(BUILD_TARGET_PATH);
@@ -180,7 +180,6 @@ public class Unity3dBuilder : EditorWindow{
 		PlayerSettings.iOS.appleEnableAutomaticSigning=false;
 
 		GenericBuild(SCENES, BUILD_TARGET_PATH, BuildTarget.iOS, opt);
-
 
 	}
 	[MenuItem ("Build/iOS/Simulator")]
@@ -199,11 +198,11 @@ public class Unity3dBuilder : EditorWindow{
 		PlayerSettings.productName = "9InningsManager";        
 		PlayerSettings.iPhoneBundleIdentifier = "com.com2us.ent.mlbgm";
 
-		PlayerSettings.SetScriptingDefineSymbolsForGroup (BuildTargetGroup.iOS, "DEV_SERVER;DEV_VER;ENABLE_LOG;");
+		PlayerSettings.SetScriptingDefineSymbolsForGroup (BuildTargetGroup.iOS, "DEV_SERVER;DEV_VER;ENABLE_LOG;IOS_SIMULATOR");
 
 		//2018.02.05추가 : Unity5.6으로 업데이트 하면서 발생한 이슈
 		PlayerSettings.SetUseDefaultGraphicsAPIs( BuildTarget.iOS, false );
-		PlayerSettings.SetGraphicsAPIs( BuildTarget.iOS, new [] { UnityEngine.Rendering.GraphicsDeviceType.OpenGLES2, UnityEngine.Rendering.GraphicsDeviceType.Metal } );
+		PlayerSettings.SetGraphicsAPIs( BuildTarget.iOS, new [] {UnityEngine.Rendering.GraphicsDeviceType.OpenGLES3, UnityEngine.Rendering.GraphicsDeviceType.OpenGLES2, UnityEngine.Rendering.GraphicsDeviceType.Metal } );
 
 		string BUILD_TARGET_PATH = TARGET_DIR + "/iOS_Simulator";
 		Directory.CreateDirectory(BUILD_TARGET_PATH);
